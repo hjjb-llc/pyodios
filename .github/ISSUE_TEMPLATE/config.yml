@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Documentation
+    url: https://pyodios.caffeinatedmath.com/
+    about: Check the docs first. Many questions are answered there.
+  - name: Email support
+    url: mailto:support@caffeinatedmath.com
+    about: For private support requests.

@@ -1,0 +1,56 @@
+name: Bug report
+description: Something isn't working as expected
+title: "[BUG] "
+labels: ["t:bug", "s:needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for filing a bug. The more we know, the faster we can fix it.
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: A clear description of the problem and what you expected instead.
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to reproduce
+      description: How can we reproduce this ourselves?
+      placeholder: |
+        1.
+        2.
+        3.
+    validations:
+      required: true
+  - type: input
+    id: app_version
+    attributes:
+      label: Pyodios version
+      description: Find this in Settings, then About.
+      placeholder: "0.1.0"
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: Device model
+      placeholder: "e.g. Pixel 8, iPhone 15 Pro"
+    validations:
+      required: true
+  - type: input
+    id: os_version
+    attributes:
+      label: iOS version
+      placeholder: "e.g. iOS 17"
+    validations:
+      required: true
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional context
+      description: Screenshots, logs, hunches.
+    validations:
+      required: false

@@ -1,0 +1,26 @@
+name: Documentation issue
+description: Something in the docs is wrong, missing, or confusing
+title: "[DOCS] "
+labels: ["t:documentation", "s:needs-triage"]
+body:
+  - type: input
+    id: page
+    attributes:
+      label: Where's the doc problem?
+      description: Link to the page or section.
+      placeholder: "https://pyodios.caffeinatedmath.com/"
+    validations:
+      required: false
+  - type: textarea
+    id: issue
+    attributes:
+      label: What's wrong, missing, or confusing?
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Suggested fix
+      description: If you have an idea.
+    validations:
+      required: false

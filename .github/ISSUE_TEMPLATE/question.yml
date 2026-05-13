@@ -1,0 +1,30 @@
+name: Question
+description: Ask a question or request support
+title: "[QUESTION] "
+labels: ["t:question", "s:needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Check the [docs FAQ](https://pyodios.caffeinatedmath.com/) first. Many questions are answered there.
+  - type: textarea
+    id: question
+    attributes:
+      label: Your question
+      description: What are you trying to do?
+    validations:
+      required: true
+  - type: textarea
+    id: tried
+    attributes:
+      label: What have you tried?
+      description: Steps you have already taken.
+    validations:
+      required: false
+  - type: input
+    id: app_version
+    attributes:
+      label: Pyodios version
+      placeholder: "0.1.0"
+    validations:
+      required: false
